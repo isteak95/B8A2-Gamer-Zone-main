@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+*{
+    box-sizing: border-box;
+}
 
 header img {
     width: 86.041px;
@@ -10,7 +13,11 @@ header img {
 }
 
 header {
-    height: 130px;
+    height: 120px;
+    padding: 10px 240px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 nav {
@@ -21,7 +28,7 @@ nav {
 nav>div {
     display: flex;
     margin-top: 40px;
-    margin-left: 240px;
+
 }
 
 nav>div>p {
@@ -88,20 +95,24 @@ nav li div>p {
 /*  banner part*/
 .section-banner {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 .banner-div {
     background-image: url('images/Group 14.png');
     width: 901px;
     height: 700px;
-    margin-left: -80px;
 
+}
+.banner-img-1{
+    height: 100%;
+    margin-left: 50px;
 }
 
 .banner-div-1 {
-    margin-left: 150px;
-    margin-top: 200px;
+    padding-left: 150px;
+    padding-top: 200px;
 }
 
 .banner-div-3 {
@@ -120,7 +131,7 @@ nav li div>p {
 .banner-div-2 {
     color: #0B0223;
     font-family: Work Sans;
-    font-size: 48px;
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -216,6 +227,10 @@ nav li div>p {
     /* 166.667% */
 }
 
+.t1:hover {
+    color: #0B0223;
+}
+
 .funny-div-1 {
     display: flex;
     margin-top: 48px;
@@ -297,7 +312,6 @@ nav li div>p {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    height: 500px;
     padding-bottom: 150px;
 }
 
@@ -309,22 +323,25 @@ nav li div>p {
     background: #FFF;
     margin-top: 147px;
     gap: 2.5rem;
-    
+
 
 }
-.section-div p{
+
+.section-div p {
     margin-top: 25px;
     color: #0B0223;
-font-family: Work Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-.section-div p:hover{
+
+.section-div p:hover {
     color: red;
 }
-.section-div div:hover{
+
+.section-div div:hover {
     background-color: wheat;
 }
 
@@ -338,7 +355,7 @@ footer {
 .footer-div {
 
     display: flex;
-    padding-left: 833px;
+    justify-content: center;
     padding-top: 120px;
     color: #FFF;
     font-family: Work Sans;
@@ -364,7 +381,9 @@ footer {
 
 .footer-div-1 {
     display: flex;
-    padding: 50px 653px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
     gap: 2rem;
     color: #FFF;
     text-align: center;
@@ -391,7 +410,9 @@ footer {
     font-weight: 500;
     line-height: normal;
     display: flex;
-    padding: 30px 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
     gap: 1.5rem;
 }
 
@@ -409,11 +430,23 @@ footer {
 /* responsive media queries */
 @media screen and (max-width:576px) {
     header {
-        padding: 20px;
+        padding: 10px 90px;
+        height: 392px;
     }
 
-    nav>div {
-        padding-left: -50px;
+    nav ul li {
+        text-align: center;
+    }
+    .banner-div{
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+    .banner-div-1{
+        margin: -180px -110px;
+    }
+    .button-1{
+        margin-top: 170px;
+        margin-left: -105px;
     }
 
     nav,
@@ -424,4 +457,9 @@ footer {
     .funny-div-1 {
         flex-direction: column;
     }
+    .banner-img-1{
+        height:50% ;
+        width: 50%;
+    }
+
 }
