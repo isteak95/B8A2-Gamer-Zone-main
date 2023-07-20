@@ -444,8 +444,11 @@ footer {
 }
 
 .footer-div-2 {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 40px;
+    gap: 20px;
 
 }
 
